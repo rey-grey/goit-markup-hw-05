@@ -852,7 +852,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-wrapper {
-    margin-bottom: 8px;
+    margin-bottom: 16px
 }
 
 .modal-label {
@@ -967,14 +967,19 @@ outline: none;
 border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 margin-right: 8px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 fill: transparent; 
 }
 
-.checkbox-input:checked + .modal-label-accept > .modal-check {
+.checkbox-input:checked~.modal-label-accept .modal-check {
 background-color: #404bbf;
+border: none;
+fill: #F4F4FD;
 
 }
+
+
+
 
 .modal-label-accept{
     font-weight: 400;
@@ -994,20 +999,25 @@ line-height: 1.33333;
 
 
 .modal-submit-btm {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 border-radius: 4px;
 padding: 16px 32px;
-width: 169px;
+min-width: 169px;
 height: 56px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background-color: #4d5ae5;
 border: none;
 color: #fff;
 margin: auto;
-display: flex;
-align-items: center;
-justify-content: center;
+display: block;
+
+
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 .modal-submit-btm:hover,
 .modal-submit-btm:focus {
     background-color: #404bbf;
