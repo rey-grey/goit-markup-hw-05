@@ -489,19 +489,41 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-content">
+          <div class="footer-input">
+            <p class="subscribe-paragraph">Subscribe</p>
+
+            <form class="form-subscribe">
+              <label class="label-subscribe" for="email"></label>
+              <input
+                class="inpute-subscribe"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </form>
+          </div>
+          <button class="subscibe-btn" type="submit">
+            Subscribe
+            <svg class="icon-subskribe" width="24" height="24">
+              <use href="./images/icons.svg#icon-Frame-3"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
 
     <!-- MODAL FORM -->
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btm" type="button">
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
-        <p class="paragraf-form">
+
+        <p class="paragraph-form">
           Leave your contacts and we will call you back
         </p>
         <form autocomplete="off">
@@ -540,19 +562,26 @@
                 id="comment"
                 name="comment"
                 placeholder="Text input"
-              >
-              </textarea>
+              ></textarea>
             </div>
           </div>
+
           <div class="checkbox-wrapper">
             <input
-              class="checkbox-input"
+              class="checkbox-input visually-hidden"
               type="checkbox"
               id="accept"
               name="accept"
+              value="true"
+              checked
             />
-            <label class="modal-label-accept" for="accept"
-              >I accept the terms and conditions of the
+            <label class="modal-label-accept" for="accept">
+              <span class="modal-check">
+                <svg class="checkbox-icon" width="10" height="7">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a class="checkbox-link" href="#">Privacy Policy</a>
             </label>
           </div>
