@@ -852,7 +852,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-wrapper {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .modal-label {
@@ -931,6 +931,8 @@ outline: none;
         border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px; 
         outline: transparent;
+        resize: none;
+         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
 
 
@@ -966,6 +968,7 @@ border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 margin-right: 8px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+fill: transparent; 
 }
 
 .checkbox-input:checked + .modal-label-accept > .modal-check {
@@ -976,7 +979,7 @@ background-color: #404bbf;
 .modal-label-accept{
     font-weight: 400;
         font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
 
