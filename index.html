@@ -490,7 +490,7 @@
           </ul>
         </div>
         <div class="subscribe-content">
-          <div class="footer-input">
+          
             <p class="subscribe-paragraph">Subscribe</p>
 
             <form class="form-subscribe">
@@ -501,21 +501,24 @@
                 name="email"
                 placeholder="E-mail"
               />
-            </form>
-          </div>
-          <button class="subscibe-btn" type="submit">
+             <button class="subscibe-btn" type="submit">
             Subscribe
             <svg class="icon-subskribe" width="24" height="24">
               <use href="./images/icons.svg#icon-Frame-3"></use>
             </svg>
           </button>
+
+
+            </form>
+          </div>
+          
         </div>
       </div>
     </footer>
 
     <!-- MODAL FORM -->
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btm" type="button">
           <svg class="icon-close" width="8" height="8">
@@ -528,9 +531,9 @@
         </p>
         <form autocomplete="off">
           <div class="modal-wrapper">
-            <label class="modal-label" for="name">Name</label>
+            <label class="modal-label" for="user-name">Name</label>
             <div class="modal-fielf">
-              <input class="modal-input" type="text" id="name" name="name" />
+              <input class="modal-input" type="text" id="user-name" name="user-name" />
               <svg class="modal-item" width="18" height="24">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
@@ -555,12 +558,12 @@
             </div>
           </div>
           <div class="modal-wrapper">
-            <label class="modal-label" for="comment">Comment</label>
-            <div class="modal-fielf">
+            <label class="modal-label" for="user-comment">Comment</label>
+            
               <textarea
                 class="modal-textarea"
-                id="comment"
-                name="comment"
+                id="user-comment"
+                name="user-comment"
                 placeholder="Text input"
               ></textarea>
             </div>
@@ -570,14 +573,14 @@
             <input
               class="checkbox-input visually-hidden"
               type="checkbox"
-              id="accept"
-              name="accept"
+              id="user-privacy"
+              name="user-privacy"
               value="true"
               checked
             />
-            <label class="modal-label-accept" for="accept">
+            <label class="modal-label-accept" for="user-privacy">
               <span class="modal-check">
-                <svg class="checkbox-icon" width="10" height="7">
+                <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
